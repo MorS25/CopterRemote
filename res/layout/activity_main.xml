@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#555"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.DeviceDefault"
+    tools:context=".Client" >
+
+    <android.widget.VerticalSeekBar
+        android:id="@+id/slider_thr"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_zero"
+        android:layout_alignParentRight="true" />
+
+    <Switch
+        android:id="@+id/btn_arm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_connect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textOff="DISARMED"
+        android:textOn="ARMED" />
+
+    <Button
+        android:id="@+id/btn_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/log"
+        android:text="@string/btn_zero"
+        android:textSize="25sp" />
+
+    <ToggleButton
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/log"
+        android:textOff="@string/btn_connect"
+        android:textOn="@string/btn_disconnect" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_arm"
+        android:layout_toLeftOf="@+id/slider_thr"
+        android:background="#999"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

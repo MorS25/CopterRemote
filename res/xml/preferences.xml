@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="ip"
+        android:summary=""
+        android:title="@string/preferences_ip" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:key="port"
+        android:summary=""
+        android:title="@string/preferences_port" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:key="thr_min"
+        android:summary=""
+        android:title="@string/preferences_thr_min" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:key="thr_max"
+        android:summary=""
+        android:title="@string/preferences_thr_max" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:key="thr_steps"
+        android:summary=""
+        android:title="@string/preferences_thr_steps" >
+    </EditTextPreference>
+
+</PreferenceScreen>
